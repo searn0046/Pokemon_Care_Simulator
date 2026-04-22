@@ -25,13 +25,20 @@ Both diagrams are Mermaid class diagrams.
 
 ## Setup
 
-1. Open terminal in repository root.
+1. Open terminal in _PokGotchi_ or _PokGotchi2_.
 2. Create and activate a virtual environment:
 
+### MacOS/Linux
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+### Windows
+```bash
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r .\\requirements.txt
 ```
 
 Important dependency note:
@@ -40,18 +47,8 @@ Important dependency note:
 
 ## Run
 
-Base-case:
-
 ```bash
-cd PokGotchi
-python3 main.py
-```
-
-Evolution extension:
-
-```bash
-cd PokGotchi2
-python3 main.py
+python main.py
 ```
 
 ## Features Summary
