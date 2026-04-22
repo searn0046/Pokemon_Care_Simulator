@@ -1,0 +1,77 @@
+classDiagram
+direction TB
+
+class Pokemon {
+  <<abstract>>
+  +name: str
+  +species: str
+  +type: str
+  +energy_source: str
+  +age: int
+  +nutrition: int
+  +energy: int
+  +happiness: int
+  +curr_mood: str
+  +update(ticks_passed, framerate)
+  +set_mood()
+  +feed()
+  +play()
+  +give_energy()
+  +sleep()
+  +wake_up()
+  +die()
+}
+
+class FireType {
+  <<abstract>>
+}
+class WaterType {
+  <<abstract>>
+}
+class ElectricType {
+  <<abstract>>
+}
+class RockType {
+  <<abstract>>
+}
+
+Pokemon <|-- FireType
+Pokemon <|-- WaterType
+Pokemon <|-- ElectricType
+Pokemon <|-- RockType
+
+class Charmander
+class Growlithe
+class Vulpix
+FireType <|-- Charmander
+FireType <|-- Growlithe
+FireType <|-- Vulpix
+
+class Squirtle
+class Psyduck
+class Magikarp
+WaterType <|-- Squirtle
+WaterType <|-- Psyduck
+WaterType <|-- Magikarp
+
+class Pichu
+class Magnemite
+class Elekid
+ElectricType <|-- Pichu
+ElectricType <|-- Magnemite
+ElectricType <|-- Elekid
+
+class Geodude
+class Rhyhorn
+class Larvitar
+RockType <|-- Geodude
+RockType <|-- Rhyhorn
+RockType <|-- Larvitar
+
+class LabeledProgressBar {
+  +label: str
+  +set_current_progress(progress)
+  +status_text()
+}
+
+class Skip

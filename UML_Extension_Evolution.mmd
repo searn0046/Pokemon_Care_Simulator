@@ -1,0 +1,134 @@
+classDiagram
+    class Pokemon {
+        <<abstract>>
+        +name: str
+        +species: str
+        +type: str
+        +stage: int
+        +next_stage: type|None
+        +nutrition: int
+        +energy: int
+        +happiness: int
+        +level: int
+        +age: int
+        +curr_mood: str
+        +update(ticks_passed, framerate)
+        +set_mood()
+        +give_energy()
+        +feed()
+        +play()
+        +sleep()
+        +wake_up()
+        +level_up()
+        +evolve()
+        +die()
+    }
+
+    class FireType { <<abstract>> }
+    class WaterType { <<abstract>> }
+    class ElectricType { <<abstract>> }
+    class RockType { <<abstract>> }
+
+    Pokemon <|-- FireType
+    Pokemon <|-- WaterType
+    Pokemon <|-- ElectricType
+    Pokemon <|-- RockType
+
+    class Charmander
+    class Charmeleon
+    class Charizard
+    FireType <|-- Charmander
+    FireType <|-- Charmeleon
+    FireType <|-- Charizard
+    Charmander --> Charmeleon : next_stage
+    Charmeleon --> Charizard : next_stage
+
+    class Growlithe
+    class Arcanine
+    FireType <|-- Growlithe
+    FireType <|-- Arcanine
+    Growlithe --> Arcanine : next_stage
+
+    class Vulpix
+    class Ninetales
+    FireType <|-- Vulpix
+    FireType <|-- Ninetales
+    Vulpix --> Ninetales : next_stage
+
+    class Squirtle
+    class Wartortle
+    class Blastoise
+    WaterType <|-- Squirtle
+    WaterType <|-- Wartortle
+    WaterType <|-- Blastoise
+    Squirtle --> Wartortle : next_stage
+    Wartortle --> Blastoise : next_stage
+
+    class Psyduck
+    class Golduck
+    WaterType <|-- Psyduck
+    WaterType <|-- Golduck
+    Psyduck --> Golduck : next_stage
+
+    class Magikarp
+    class Gyarados
+    WaterType <|-- Magikarp
+    WaterType <|-- Gyarados
+    Magikarp --> Gyarados : next_stage
+
+    class Pichu
+    class Pikachu
+    class Raichu
+    ElectricType <|-- Pichu
+    ElectricType <|-- Pikachu
+    ElectricType <|-- Raichu
+    Pichu --> Pikachu : next_stage
+    Pikachu --> Raichu : next_stage
+
+    class Magnemite
+    class Magneton
+    class Magnezone
+    ElectricType <|-- Magnemite
+    ElectricType <|-- Magneton
+    ElectricType <|-- Magnezone
+    Magnemite --> Magneton : next_stage
+    Magneton --> Magnezone : next_stage
+
+    class Elekid
+    class Electabuzz
+    class Electivire
+    ElectricType <|-- Elekid
+    ElectricType <|-- Electabuzz
+    ElectricType <|-- Electivire
+    Elekid --> Electabuzz : next_stage
+    Electabuzz --> Electivire : next_stage
+
+    class Geodude
+    class Graveler
+    class Golem
+    RockType <|-- Geodude
+    RockType <|-- Graveler
+    RockType <|-- Golem
+    Geodude --> Graveler : next_stage
+    Graveler --> Golem : next_stage
+
+    class Rhyhorn
+    class Rhydon
+    class Rhyperior
+    RockType <|-- Rhyhorn
+    RockType <|-- Rhydon
+    RockType <|-- Rhyperior
+    Rhyhorn --> Rhydon : next_stage
+    Rhydon --> Rhyperior : next_stage
+
+    class Larvitar
+    class Pupitar
+    class Tyranitar
+    RockType <|-- Larvitar
+    RockType <|-- Pupitar
+    RockType <|-- Tyranitar
+    Larvitar --> Pupitar : next_stage
+    Pupitar --> Tyranitar : next_stage
+
+    class LabeledProgressBar
+    class Skip

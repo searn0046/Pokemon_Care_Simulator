@@ -1,0 +1,621 @@
+{
+
+    "#start_button": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "active_bg": "#00000000",
+            
+            "normal_border": "#000000",
+            "hovered_border": "#000000",
+            "active_border": "#000000",
+            
+            "normal_text": "#FF4B90FF",
+            "hovered_text": "#FF4B90CC",
+            "active_text": "#FF4B90CC",
+
+            "normal_text_shadow": "#1C6FEDFF",
+            "hovered_text_shadow": "#1C6FEDFF",
+            "active_text_shadow": "#8ACEFBFF"
+        },
+        "font": {
+            "name": "pixelated.ttf",
+            "regular_path": "fonts/pixel_operator/PixelOperatorMono8.ttf",
+            "size": "40",
+            "bold": "1",
+            "bold_path": "fonts/pixel_operator/PixelOperatorMono8-Bold.ttf"
+
+        },
+        "misc": {
+            "border_width": "0",
+            "shadow_width": "0",
+            "text_shadow_size": "1",
+            "text_shadow_offset": "1,1",
+            "text_vert_alignment": "center",
+            "text_horiz_alignment": "center"
+        }
+    },
+
+    "#big_button_panel": {
+        "colours": {
+            "dark_bg": "#00000000",
+            "normal_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rectangle",
+            "border_width": "0",
+            "shadow_width": "0",
+            "padding": "0"
+        }
+    },
+
+    "#button_panel": {
+        "colours": {
+            "dark_bg": "#00000011",
+            "normal_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "border_width": "0",
+            "shadow_width": "8",
+            "shadow_offset": "0,0",
+            "padding": "0"
+        }
+    },
+
+    "#new_pokemon_button": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "active_bg": "#00000000",
+            "selected_bg": "#00000000",
+            "disabled_bg": "#00000000",
+            
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "selected_border": "#00000000",
+            "disabled_border": "#00000000"
+        },
+        "images": {
+            "normal_image":   { "path": "images/pokeball_mystery.png" },
+            "hovered_image":  { "path": "images/pokeball_mystery_hovered.png" },
+            "selected_image": { "path": "images/pokeball.png" },
+            "disabled_image": { "path": "images/pokeball_disabled.png" }
+        },
+        "misc": {
+            "auto_scale_images": "1",
+            "shape": "ellipse",
+            "shadow_width": "0",
+            "border_width": "0",
+            "main_text_padding": "0,0,0,0"
+        }
+    },
+
+    "#pokedex_button": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "active_bg": "#00000000",
+            "selected_bg": "#00000000",
+            "disabled_bg": "#00000000",
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "selected_border": "#00000000",
+            "disabled_border": "#00000000"
+        },
+        "images": {
+            "normal_image":   { "path": "images/pokedex.png" },
+            "hovered_image":  { "path": "images/pokedex_hovered.png" },
+            "selected_image": { "path": "images/pokedex.png" },
+            "disabled_image": { "path": "images/pokedex_disabled.png" }
+        },
+        "misc": {
+            "auto_scale_images": "1",
+            "shadow_width": "0",
+            "border_width": "0",
+            "main_text_padding": "0,0,0,0"
+        }
+    },
+
+    "#feed_button": {
+        "colours": {
+            "normal_bg": "#55FF55BB",
+            "hovered_bg": "#55FF55FF",
+            "active_bg": "#44EE44FF",
+            "disabled_bg": "#55FF5566",
+
+            "normal_border": "#00AA00DD",
+            "hovered_border": "#00AA00FF",
+            "active_border": "#008800FF",
+            "disabled_border": "#00AA0066",
+
+            "normal_text": "#FFFFFFDD",
+            "hovered_text": "#FFFFFFFF",
+            "active_text": "#EEEEEEFF",
+            "disabled_text": "#FFFFFFAA",
+
+            "normal_text_shadow": "#000000CC",
+            "hovered_text_shadow": "#000000CC",
+            "active_text_shadow": "#00000000",
+            "disabled_text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "regular_path": "fonts/pokemon_fonts/Pokemon_Solid.ttf",
+            "size": "25"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "5",
+            "border_width": "2",
+            "shadow_width": "3",
+            "active_shadow_width": "1",
+            "shadow_offset": "2,2",
+            "text_shadow_size": "2"
+        }
+    },
+
+    "#play_button": {
+        "colours": {
+            "normal_bg": "#FF5555BB",
+            "hovered_bg": "#FF5555FF",
+            "active_bg": "#EE4444FF",
+            "disabled_bg": "#FF555566",
+
+            "normal_border": "#AA0000FF",
+            "hovered_border": "#AA0000FF",
+            "active_border": "#880000FF",
+            "disabled_border": "#AA000066",
+
+            "normal_text": "#FFFFFFDD",
+            "hovered_text": "#FFFFFFFF",
+            "active_text": "#EEEEEEFF",
+            "disabled_text": "#FFFFFFAA",
+
+            "normal_text_shadow": "#000000CC",
+            "hovered_text_shadow": "#000000CC",
+            "active_text_shadow": "#00000000",
+            "disabled_text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "25"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "5",
+            "border_width": "2",
+            "shadow_width": "3",
+            "active_shadow_width": "1",
+            "shadow_offset": "2,2",
+            "text_shadow_size": "2"
+        }
+    },
+
+    "#sleep_button": {
+        "colours": {
+            "normal_bg": "#5555FFBB",
+            "hovered_bg": "#5555FFFF",
+            "active_bg": "#4444EEFF",
+            "disabled_bg": "#5555FF66",
+
+            "normal_border": "#0000AAFF",
+            "hovered_border": "#0000AAFF",
+            "active_border": "#000088FF",
+            "disabled_border": "#0000AA66",
+
+            "normal_text": "#FFFFFFDD",
+            "hovered_text": "#FFFFFFFF",
+            "active_text": "#EEEEEEFF",
+            "disabled_text": "#FFFFFFAA",
+
+            "normal_text_shadow": "#000000CC",
+            "hovered_text_shadow": "#000000CC",
+            "active_text_shadow": "#00000000",
+            "disabled_text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "25"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "5",
+            "border_width": "2",
+            "shadow_width": "3",
+            "active_shadow_width": "1",
+            "shadow_offset": "2,2",
+            "text_shadow_size": "2"
+        }
+    },
+
+    "#give_energy_button": {
+        "colours": {
+            "normal_bg": "#5A2A82CC",
+            "hovered_bg": "#6A3498FF",
+            "active_bg": "#4A226AFF",
+            "disabled_bg": "#5A2A8266",
+
+            "normal_border": "#3B1B56FF",
+            "hovered_border": "#3B1B56FF",
+            "active_border": "#2B133FFF",
+            "disabled_border": "#3B1B5666",
+
+            "normal_text": "#FFFFFFDD",
+            "hovered_text": "#FFFFFFFF",
+            "active_text": "#EEEEEEFF",
+            "disabled_text": "#FFFFFFAA",
+
+            "normal_text_shadow": "#000000CC",
+            "hovered_text_shadow": "#000000CC",
+            "active_text_shadow": "#00000000",
+            "disabled_text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "25"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "5",
+            "border_width": "2",
+            "shadow_width": "3",
+            "active_shadow_width": "1",
+            "shadow_offset": "2,2",
+            "text_shadow_size": "2"
+        }
+    },
+
+    "#selection_panel": {
+        "colours": {
+            "dark_bg": "#00000011",
+            "normal_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "border_width": "0",
+            "shadow_width": "8",
+            "padding": "0"
+        }
+    },
+    "#selection_button": {
+        "colours": {
+            "normal_bg": "#00000088",
+            "hovered_bg": "#000000AA",
+            "active_bg": "#00000000",
+            "selected_bg": "#00000000",
+            "disabled_bg": "#00000011",
+            
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "selected_border": "#00000000",
+            "disabled_border": "#00000000",
+
+            "normal_text": "#FFFFFFEE",
+            "hovered_text": "#FFFFFFFF",
+            "active_text": "#FFFFFFFF",
+            "selected_text": "#FFFFFFFF",
+            "disabled_text": "#FFFFFFCC",
+
+            "hovered_text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "24"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "5",
+            "border_width": "0",
+            "shadow_width": "0",
+            "text_shadow_size": "1",
+            "text_shadow_offset": "1,1",
+            "main_text_padding": "0,0,0,0",
+            "text_vert_alignment": "bottom"
+        }
+    },
+
+    "#pokemon_selection": {
+        "colours": {
+            "dark_bg": "#00000011",
+            "normal_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "border_width": "0",
+            "shadow_width": "8",
+            "list_item_height": "64",
+            "main_text_padding": "0,0,0,0"
+        }
+    },
+    "#pokemon_selection.@selection_list_item": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000011",
+            "active_bg": "#00000022",
+            "selected_bg": "#00000022",
+            "disabled_bg": "#00000000",
+
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "selected_border": "#00000000",
+            "disabled_border": "#00000000",
+
+            "normal_text": "#FFFFFFFF",
+            "hovered_text": "#FFFFFFFF",
+            "active_text": "#FFFFFFFF",
+            "selected_text": "#FFFFFFFF",
+            "disabled_text": "#FFFFFFAA",
+
+            "normal_text_shadow": "#000000CC",
+            "hovered_text_shadow": "#000000CC",
+            "active_text_shadow": "#00000000",
+            "disabled_text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "32"
+        },
+        "misc": {
+            "shape": "rectangle",
+            "border_width": "0",
+            "shadow_width": "0",
+            "text_shadow_size": "1",
+            "text_shadow_offset": "1,1",
+            "text_vert_alignment": "center",
+            "text_horiz_alignment": "center",
+            "main_text_padding": "0,0,0,0",
+            "text_horiz_alignment_padding": "0",
+            "text_vert_alignment_padding": "0"
+        }
+    },
+
+    "#status_panel": {
+        "colours": {
+            "dark_bg": "#00000011",
+            "normal_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "border_width": "0",
+            "shadow_width": "8",
+            "padding": "0"
+        }
+    },
+    
+    "#nutrition_bar": {
+        "colours": {
+            "normal_text": "#FFFFFFFF",
+            "normal_border": "#3d3d3dCC",
+            "filled_bar": "#55FF55CC,#55FF55FF,0",
+            "unfilled_bar": "#616161CC,#616161FF,0",
+            "text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "16"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "14"
+        }
+    },
+
+    "#happiness_bar": {
+        "colours": {
+            "normal_text": "#FFFFFFFF",
+            "normal_border": "#3d3d3dCC",
+            "filled_bar": "#FF5555CC,#EE4444FF,0",
+            "unfilled_bar": "#616161CC",
+            "text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "16"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "14"
+        }
+    },
+
+    "#energy_bar": {
+        "colours": {
+            "normal_text": "#FFFFFFFF",
+            "normal_border": "#3d3d3dCC",
+            "filled_bar": "#5555FFCC,#4444EEFF,0",
+            "unfilled_bar": "#616161CC",
+            "text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "16"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "14"
+        }
+    },
+
+    "#info_text": {
+        "colours": {
+            "normal_text": "#FFFFFFFF",
+            "dark_bg": "#00000000",
+            "normal_border": "#00000000"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "18"
+        },
+        "misc": {
+            "text_shadow_size": "2",
+            "text_shadow_offset": "2,2",
+            "normal_border_width": "0",
+            "shadow_width": "0",
+            "padding": "0,0,0,0"
+        }
+    },
+    "#info_text.vertical_scroll_bar": {
+        "colours": {
+            "dark_bg": "#00000000",
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000022",
+            "active_bg": "#00000022",
+            "disabled_bg": "#00000000",
+
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "disabled_border": "#00000000",
+
+            "normal_thumb": "#AAAAAAFF",
+            "hovered_thumb": "#AAAAAAFF",
+            "active_thumb": "#888888FF",
+            "disabled_thumb": "#AAAAAA66",
+
+            "normal_arrow": "#AAAAAAFF",
+            "hovered_arrow": "#AAAAAAFF",
+            "active_arrow": "#888888FF",
+            "disabled_arrow": "#AAAAAA66"
+        },
+        "misc": {
+            "enable_arrow_buttons": "0",
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "8",
+            "border_width": "0"
+        }
+    },
+    "#info_text.vertical_scroll_bar.#sliding_button": {
+        "colours": {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "active_bg": "#AAAAAA55",
+            "disabled_bg": "#00000000",
+
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "disabled_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "8",
+            "border_width": "0",
+            "shadow_width": "0"
+        }
+    },
+
+    "#status_text": {
+        "colours": {
+            "normal_text": "#FFFFFFFF",
+            "dark_bg": "#00000000",
+            "normal_border": "#00000000",
+            "normal_text_shadow": "#FF0000FF"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "18"
+        },
+        "misc": {
+            "text_shadow_size": "2",
+            "text_shadow_offset": "2,2",
+            "normal_border_width": "0",
+            "shadow_width": "0"
+        }
+    },
+    "#status_text.vertical_scroll_bar": {
+        "colours": {
+            "dark_bg": "#00000000",
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000022",
+            "active_bg": "#00000022",
+            "disabled_bg": "#00000000",
+
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "disabled_border": "#00000000",
+
+            "normal_thumb": "#AAAAAAFF",
+            "hovered_thumb": "#AAAAAAFF",
+            "active_thumb": "#888888FF",
+            "disabled_thumb": "#AAAAAA66",
+
+            "normal_arrow": "#AAAAAAFF",
+            "hovered_arrow": "#AAAAAAFF",
+            "active_arrow": "#888888FF",
+            "disabled_arrow": "#AAAAAA66"
+        },
+        "misc": {
+            "enable_arrow_buttons": "0",
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "15",
+            "border_width": "0"
+        }
+    },
+    "#status_text.vertical_scroll_bar.#sliding_button": {
+        "colours": {
+            "normal_bg": "#AAAAAAAA",
+            "hovered_bg": "#AAAAAAFF",
+            "active_bg": "#AAAAAAFF",
+            "disabled_bg": "#AAAAAA55",
+
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "active_border": "#00000000",
+            "disabled_border": "#00000000"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "15",
+            "border_width": "0"
+        }
+    },
+
+    "#entry_line": {
+        "colours": {
+            "dark_bg": "#00000022",
+            "normal_border": "#000000AA",
+            "normal_text": "#FFFFFFFF",
+            "text_cursor": "#FFFFFFFF"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "18"
+        },
+        "misc": {
+            "border_width": "0",
+            "shadow_width": "2",
+            "text_horiz_alignment": "left",
+            "text_vert_alignment": "center",
+            "text_cursor_width": "2"
+        }
+    },
+
+    "#msg_textbox": {
+        "colours": {
+            "dark_bg": "#00000022",
+            "normal_border": "#000000AA",
+            "normal_text": "#FFFFFFFF",
+            "text_cursor": "#FFFFFFFF",
+            "text_shadow": "#000000CC"
+        },
+        "font": {
+            "name": "pokemon.ttf",
+            "size": "24"
+        },
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "10",
+            "border_width": "0",
+            "shadow_width": "2",
+            "text_horiz_alignment": "center",
+            "text_vert_alignment": "center"
+        }
+    }
+
+}
