@@ -24,7 +24,7 @@ pokemon_dict = {}  # Lookup dict: {\"name (species)\" -> pokemon_instance} for q
 POKEMON_LIMIT = 10  # Maximum concurrent pokemon allowed (spawn disabled at limit).
 MAX_NAME_LENGTH = 20  # Character limit for pokemon nicknames.
 ONLY_FIRST_STAGE = True  # Spawn pool constraint: if True, only base-stage pokemon spawn.
-ENERGY_DONATION_COOLDOWN = 1  # Minimum seconds between consecutive energy donations (per pokemon).
+ENERGY_DONATION_COOLDOWN = 15  # Minimum seconds between consecutive energy donations (per pokemon).
 
 class Skip(Exception):
     """Alternative to a goto-style early exit for intro flow."""
